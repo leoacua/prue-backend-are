@@ -1,7 +1,7 @@
 # backend/app/modulo/inmuebles/routes/inmuebles_routes.py
 from fastapi import APIRouter, Query, Depends, HTTPException
 from typing import List, Optional
-from app.modulo.inmuebles.models import Inmueble, Filtros, Paginacion
+from app.modulo.inmuebles.models.inmuebles_models import Inmueble, Filtros, Paginacion
 from app.modulo.inmuebles.repositories.memory_repo import InmueblesRepoMem
 from app.modulo.inmuebles.services.inmuebles_service import InmueblesService
 
